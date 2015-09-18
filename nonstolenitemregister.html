@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
 <title>Stolen Items</title>
 <style>
@@ -36,8 +35,10 @@ button{
 <br>
 <?
 
-print("<form name=theForm action="nonstolenitemregister.html" method="POST">");
+print("<FORM name=theForm action=nonstolenitemregister.html method=POST>");
 print("<INPUT type=hidden name=item value=$item >");
+print("<INPUT type=hidden name=task value=insert >");
+
 ?>
 <table style='width:100%;text-color:white;'>
   <tr>
@@ -61,6 +62,20 @@ print("<INPUT type=hidden name=item value=$item >");
 <br>
 
   <input type="submit">
-<?</form>?>
-</body>
-</html>
+<?
+print("</form>");
+?>
+////////////////////////////////////////////////////
+///TASK
+//////////////////////////////////////////////////
+<?
+if($task == 'insert'){
+
+ $sql  = "INSERT INTO Registration ";
+ $sql .= "(Item,Serial_Number,Picture,Contact_Info,Description) VALUES ($item,$serial_number,$picture,$contact_ifno,$description)";
+ $rs = mysql_query($sql);
+
+
+print("</body>");
+print("</html>");
+?>
