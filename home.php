@@ -23,10 +23,10 @@ button{
 
     print("<table style='width:100%;text-color:white;'>");
     print("<tr>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="home.html">Home</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="missingitems.html">Missing Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button tyep="button"><a href="nonstolenitemregister.html">Register Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="profile.html">Profile</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button type="button"><a href="home.php">Home</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button type="button"><a href="missingitems.php">Missing Items</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button tyep="button"><a href="nonstolenitemregister.php">Register Items</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button type="button"><a href="profile.php">Profile</a></button></td>");
 
     print("</tr>");
     print("</table>");
