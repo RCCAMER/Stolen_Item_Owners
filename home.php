@@ -1,6 +1,7 @@
 <?
-require_once("seritore.inc");//this will contain all the needed things to talk to the database
-require_once("login.inc");//hand login info and stuff needed 
+//require_once("seritore.inc");//this will contain all the needed things to talk to the database
+//require_once("login.inc");//hand login info and stuff needed 
+require_once("dbconnect.inc");
 ?>
 <style>
 body{
@@ -23,10 +24,10 @@ button{
 
     print("<table style='width:100%;text-color:white;'>");
     print("<tr>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="home.php">Home</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="missingitems.php">Missing Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button tyep="button"><a href="nonstolenitemregister.php">Register Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="profile.php">Profile</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button type='button'><a href='home.php'>Home</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button type='button'><a href='missingitems.php'>Missing Items</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button tyep='button'><a href='nonstolenitemregister.php'>Register Items</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><button type='button'><a href='profile.php'>Profile</a></button></td>");
 
     print("</tr>");
     print("</table>");
@@ -61,4 +62,15 @@ button{
     print("</tr>");
     print("</table>");
     print("</div>");
+    print("<br>");
+
+    print("<table style='width:100%;'>");
+    print("<tr>");
+    print("<td style='width:40%;'>");
+    print("<td style='width:10%;border:1px solid red;text-align:center;' ><a href='login.php'>Login</a></td>");
+    print("<td style='width:10%;border:1px solid red;text-align:center;' ><a href='signup.php'>Sign Up</a></td>");
+    print("<td style='width:40%;'>");
+    print("</tr>");
+    print("</table>");
+
 ?>
