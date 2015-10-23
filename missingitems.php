@@ -1,6 +1,7 @@
 <?
-require_once("seritore.inc");
-require_once("login.inc");
+//require_once("seritore.inc");
+//require_once("login.php");
+require_once("dbconnect.inc");
 
 ?>
 <style>
