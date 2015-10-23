@@ -47,7 +47,7 @@ button{
     $sql .="FROM Registration r, Users u ";
     $sql .="AND r.UID = u.UID ";
     $rs = $con->query($sql);
-    if ($rs->num_rows > 0) {
+    if ($rs->num_rows) {
     while($mysql_row = $rs->fetch_assoc()) {
             if($i !== 0) $i = 0;
             else $i++;
