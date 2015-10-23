@@ -43,10 +43,10 @@ button{
     print("<INPUT type=hidden name=task value=insert>");
     }
 
-    $sql  ="SELECT r.Item, r.Serial_Number,r.Picture,r.Contact_Info,r.Description ";
-    $sql .="FROM Registration r ";
-    //$sql .="AND r.UID = u.UID ";
-    if($rs = $con->query($sql)){ echo "this work"};
+    $sql  ="SELECT r.Item, r.Serial_Number,r.Picture,r.Contact_Info,r.Description, u.UID ";
+    $sql .="FROM Registration r, Users u ";
+    $sql .="AND r.UID = u.UID ";
+    $rs = $con->query($sql);
     if($rs->num_rows) {
     while($mysql_row = $rs->fetch_assoc()) {
         $item = $mysql_row['Item'];
