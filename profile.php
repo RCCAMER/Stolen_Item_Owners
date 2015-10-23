@@ -43,20 +43,18 @@ button{
     print("<INPUT type=hidden name=task value=insert>");
     }
 
-    $sql  ="SELECT r.Item, r.Serial_Number,r.Picture,r.Contact_Info,r.Description, r.UID ";
-    $sql .="FROM Registration r, Users u ";
-    $sql .="AND r.UID = u.UID ";
+    $sql  ="SELECT r.Item, r.Serial_Number,r.Picture,r.Contact_Info,r.Description ";
+    $sql .="FROM Registration r ";
+    //$sql .="AND r.UID = u.UID ";
     $rs = $con->query($sql);
     if($rs->num_rows) {
     while($mysql_row = $rs->fetch_assoc()) {
-            if($i !== 0) $i = 0;
-            else $i++;
-            $item = $mysql_row['Item'];
-            $serial_number = $mysql_row['Serial_Number'];
-            $pic = $mysql_row['Picture'];
-            $info = $mysql_row['Contact_Info'];
-            $desc = $mysql_row['Description'];
-            $userid = $mysql_row['UID'];
+        $item = $mysql_row['Item'];
+        $serial_number = $mysql_row['Serial_Number'];
+        $pic = $mysql_row['Picture'];
+        $info = $mysql_row['Contact_Info'];
+        $desc = $mysql_row['Description'];
+        $userid = $mysql_row['UID'];
 
     print("<table style='width:100%;text-color:white;' class='tddata'>");
     print("<tr>");
@@ -87,7 +85,6 @@ button{
     print("</tr>");
     print("</table>");
     }else{
-
     print("<table style='width:100%;text-color:white;' class='tddata'>");
     print("<tr>");
     print("<td style='width:10%;font-size:20px;padding-left:5px;'><B>Item</B></td>");
@@ -116,8 +113,6 @@ button{
     print("</table>");
     }
     print("<br>");
-
-
     print("</FORM>");
 
 /////////////////////////////////////////////////////////////////////
