@@ -85,7 +85,20 @@ button{
     print("</td>");
     print("</tr>");
     print("</table>");
-    }else{
+    }
+    $sql  ="SELECT FirstName,LastName,UserName,Address,Password ";
+    $sql .="FROM Users ";
+    $sql .="AND UID = $userid ";
+    $rs = $con->query($sql);
+    print("sql $sql");
+    if($rs->num_rows) {
+    while($mysql_row = $rs->fetch_assoc()) {
+        $item = $mysql_row['Item'];
+        $serial_number = $mysql_row['Serial_Number'];
+        $pic = $mysql_row['Picture'];
+        $info = $mysql_row['Contact_Info'];
+        $desc = $mysql_row['Description'];
+        $userid = $mysql_row['UID'];
     print("<table style='width:100%;text-color:white;' class='tddata'>");
     print("<tr>");
     print("<td style='width:10%;font-size:20px;padding-left:5px;'><B>Item</B></td>");
@@ -112,7 +125,7 @@ button{
     print("</td>");
     print("</tr>");
     print("</table>");
-    }
+    } 
     print("<br>");
     print("</FORM>");
 
