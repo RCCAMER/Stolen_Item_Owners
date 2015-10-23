@@ -26,10 +26,10 @@ print("<h1>Missing Items List</h1>");
 
     print("<table style='width:100%;text-color:white;'>");
     print("<tr>");
-    print("<td style='width:25%;text-align:center;'><button type="button" ><a href="home.php">Home</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="missingitems.php">Missing Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button tyep="button"><a href="nonstolenitemregister.php">Register Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type="button"><a href="profile.php">Profile</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><a href='home.php'><button type='button' >Home</button></a></td>");
+    print("<td style='width:25%;text-align:center;'><a href='missingitems.php'><button type='button'>Missing Items</button></a></td>");
+    print("<td style='width:25%;text-align:center;'><a href='nonstolenitemregister.php'><button tyep='button'>Register Items</button></a></td>");
+    print("<td style='width:25%;text-align:center;'><a href='profile.php'><button type='button'>Profile</button></a></td>");
     print("</tr>");
     print("</table>");
     print("<br>");
@@ -44,11 +44,11 @@ print("<h1>Missing Items List</h1>");
     print("</tr>");
     print("</table>");
 
-    print("<table style="width:100%;text-color:white;" class='tddata'>");
+    print("<table style='width:100%;text-color:white;' class='tddata'>");
     print("<tr>");
     print("<td style='width:10%;border-top:1px solid red;border-bottom:1px solid red;border-left:1px solid red;padding-left:5px;'>Play Station 4</td>");
     print("<td style='width:15%;border-top:1px solid red;border-bottom:1px solid red;'>4930293847584930</td>");
-    print("<td style='width:10%;border-top:1px solid red;border-bottom:1px solid red;'><img src="ps4.jpg" alrt="fun" style='width:100px;height:100px;'></td>");
+    print("<td style='width:10%;border-top:1px solid red;border-bottom:1px solid red;'><img src='ps4.jpg' alrt='fun' style='width:100px;height:100px;'></td>");
     print("<td style='width:25%;border-top:1px solid red;border-bottom:1px solid red;'>Ryan Cameron rcameron@live.com</td>");
     print("<td style='width:50%;border-top:1px solid red;border-bottom:1px solid red;border-right:1px solid red;'>Special edition ps4 with an amaerican flag on top and whiteish silver bottom</td>");
 

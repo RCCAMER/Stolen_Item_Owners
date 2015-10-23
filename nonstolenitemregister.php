@@ -28,9 +28,9 @@ button{
     print("<table style='width:100%;text-color:white;'>");
     print("<tr>");
     print("<td style='width:25%;text-align:center;'><a href='home.php'><button type='button' >Home</button></a></td>");
-    print("<td style='width:25%;text-align:center;'><button type='button'><a href='missingitems.php'>Missing Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button tyep='button'><a href='nonstolenitemregister.php'>Register Items</a></button></td>");
-    print("<td style='width:25%;text-align:center;'><button type='button'><a href='profile.php'>Profile</a></button></td>");
+    print("<td style='width:25%;text-align:center;'><a href='missingitems.php'><button type='button'>Missing Items</button></a></td>");
+    print("<td style='width:25%;text-align:center;'><a href='nonstolenitemregister.php'><button tyep='button'>Register Items</button></a></td>");
+    print("<td style='width:25%;text-align:center;'><a href='profile.php'><button type='button'>Profile</button></a></td>");
     print("</tr>");
     print("</table>");
     print("<br>");
