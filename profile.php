@@ -47,6 +47,7 @@ button{
     $sql .="FROM Registration r, Users u ";
     $sql .="AND r.UID = u.UID ";
     $rs = $con->query($sql);
+    print("sql $sql");
     if($rs->num_rows) {
     while($mysql_row = $rs->fetch_assoc()) {
         $item = $mysql_row['Item'];
